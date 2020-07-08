@@ -1,3 +1,13 @@
 1Creactemodules
 Creamos form.module.css
 por que react lee correctamente este nombre
+es para tener stilos como modulo ahora vamos a utilizarlo 
+
+lo importamos de la siguiente manera
+
+import styles from "./Form.module.css";
+
+lo utilizamos de la siguiente manera
+<h2 className={styles.heading}>Encuentra Noticias por Categoría</h2>
+
+Y nuestro navegador inspecto aplicara como una especie de hash
