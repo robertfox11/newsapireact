@@ -1,10 +1,16 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Header from "./components/Header";
+import Form from "./components/Form";
+
 function App() {
-  return;
-  <Fragment>
-    <Header title="Buscador de Noticias" />
-  </Fragment>;
+  return (
+    <Fragment>
+      <Header title="Buscador de Noticias" />
+      <div className="container white">
+        <Form />
+      </div>
+    </Fragment>
+  );
 }
 
 export default App;
