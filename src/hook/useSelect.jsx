@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 
 const useSelect = (stateInicial, options) => {
   //creamos nuestro  state del custom hook para utilizar
@@ -14,7 +14,7 @@ const useSelect = (stateInicial, options) => {
       {options.map((option) => (
         //pasamos nuestra key
         <option key={option.value} value={option.value}>
-          {option.value}
+          {option.label}
         </option>
       ))}
     </select>
