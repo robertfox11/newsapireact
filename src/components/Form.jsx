@@ -16,7 +16,7 @@ const Form = ({ saveCategory }) => {
   // utilizamos custom Select
   const [category, SelectNews] = useSelect("general", OPTIONS);
 
-  //   creamos un funcion searchNews = e =>{
+  //   creamos un funcion searchNews
   const searchNews = (e) => {
     e.preventDefault();
     //guardamos la categoria con la funcion que creamos del state y le pasamos la categoria que esta en el custom
