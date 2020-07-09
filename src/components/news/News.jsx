@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 const News = ({ noticia }) => {
   const { urlToImage, url, title, description, source } = noticia;
   const imagen = urlToImage ? (
@@ -34,5 +34,7 @@ const News = ({ noticia }) => {
     </div>
   );
 };
-
+News.prototype = {
+  noticia: PropTypes.object.isRequired,
+};
 export default News;
